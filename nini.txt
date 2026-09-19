@@ -1,0 +1,100 @@
+@keyframes orbit1 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+    box-shadow: 0 0 300px #5a8fcf, 0 0 60px #5a8fcf;
+  }
+  15% {
+    transform: translate(-50%, -50%) rotate(0deg) translate(200px) rotate(0deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(13deg) translate(210px)
+      rotate(-180deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(40deg) translate(205px)
+      rotate(-60deg);
+  } /* Reverse */
+  85% {
+    transform: translate(-50%, -50%) rotate(60deg) translate(190px)
+      rotate(-56deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(40deg) translate(200px)
+      rotate(-30deg);
+  }
+}
+@keyframes orbit2 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(454deg) translate(180px)
+      rotate(-16deg);
+  }
+  45% {
+    transform: translate(-50%, -50%) rotate(20deg) translate(170px)
+      rotate(-70deg);
+  }
+  65% {
+    transform: translate(-50%, -50%) rotate(100deg) translate(175px)
+      rotate(-100deg);
+  } /* Reverse */
+  90% {
+    transform: translate(-50%, -50%) rotate(30deg) translate(185px)
+      rotate(-0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(5deg) translate(180px)
+      rotate(-100deg);
+  }
+}
+@keyframes orbit4 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  15% {
+    transform: translate(-50%, -50%) rotate(90deg) translate(220px)
+      rotate(-90deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(210deg) translate(230px)
+      rotate(-210deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(150deg) translate(225px)
+      rotate(-150deg);
+  } /* Reverse */
+  85% {
+    transform: translate(-50%, -50%) rotate(330deg) translate(215px)
+      rotate(-330deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(450deg) translate(220px)
+      rotate(-450deg);
+  }
+}
+@keyframes orbit3 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  15% {
+    transform: translate(-50%, -50%) rotate(90deg) translate(220px)
+      rotate(-90deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(210deg) translate(230px)
+      rotate(-210deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(150deg) translate(225px)
+      rotate(-150deg);
+  } /* Reverse */
+  85% {
+    transform: translate(-50%, -50%) rotate(330deg) translate(215px)
+      rotate(-330deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(450deg) translate(220px)
+      rotate(-450deg);
+  }
+}

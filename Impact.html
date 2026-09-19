@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Impact</title>
+</head>
+<body>
+
+    
+       <div class="werey">
+           <nav class="zsaq">
+                 <div class="logo"><h2>Mandy</h2></div>
+                 ''
+              <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="Impact.html">Impact</a></li>
+      </ul>
+
+           
+                 <div class="menu" onclick="opens()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+                 </div>
+           
+               </nav>
+               <br>
+              
+               <h1 class="cents">Impact</h1>
+       </div>
+
+
+<div class="sale">
+  <div class="sales">
+    <h1>Lorem ipsum dolor sit dbhku</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime ipsum repudiandae necessitatibus facilis cumque!1</p>
+  <form>
+  <div class="forms">
+      <label>
+        <input type="text" name="name" id="name" placeholder="First Name" required>
+      </label>
+      <label for="email">
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+      </label>
+  </div>
+
+  <input type="submit" value="Begin Now" class="sub">
+  </form>
+    </div>
+</div>
+<footer class="">
+  <div class="footer_container content">
+    <div class="container">
+<h1>MANDY</h1>
+<br>
+<p>
+From designing and developing real client brands & websites to developing your career, we’re here to sprinkle some fun on your design dreams and take your freelance flair to new heights! Let’s collaborate to bring your wildest aspired design and creative adventures to life!
+ </p>
+ <br>
+ <br>
+ <p>We will respond to all inquiries & requests between Monday and Friday (8 AM-7 PM) WAT.</p>
+    </div>
+    <div class="container jfg">
+
+  <h2 class="ft">FEATURED</h2>
+  <br>
+  <div class="cont_cards xczz">
+    <div class="cont_card mk">
+      <div class="cont_card_img ">
+        
+      </div>
+      <div class="cont_card_txt">
+  <h3>Jollof Rice</h3>
+  <p>Rice and chicken with distributive ogogoro</p>
+      </div>
+    </div>
+    <div class="cont_card mk">
+      <div class="cont_card_img">
+        
+      </div>
+      <div class="cont_card_txt">
+  <h3>Jollof Rice</h3>
+  <p>Rice and chicken with distributive ogogoro</p>
+      </div>
+    </div>
+    <div class="cont_card mk">
+      <div class="cont_card_img">
+        
+      </div>
+      <div class="cont_card_txt">
+  <h3>Jollof Rice</h3>
+  <p>Rice and chicken with distributive ogogoro</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+    
+    <div class="container vga">
+      <div class="cont_cols">
+        <h3 class="ft">PAGES</h3>
+        <div class="pgy">
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+        </div>
+      </div>
+      <div class="cont_cols">
+        <h3 class="ft">PAGES</h3>
+        <div class="pgy">
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+        </div>
+      </div>
+      <div class="cont_cols">
+        <h3 class="ft">PAGES</h3>
+        <div class="pgy">
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+        </div>
+      </div>
+      <div class="cont_cols">
+        <h3 class="ft">PAGES</h3>
+        <div class="pgy">
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+          <p>Home</p>
+        </div>
+      </div>
+    
+    
+    </div>
+  </div>
+  <div class="bottom_footer ">
+    <div class="wq">
+  <div class="lines"></div>
+    <div class="gq">
+      <div class="fg">
+      <h3>&copy; All Right Reserve, Mandy.com 2025</h3>
+      </div>
+      <div class="sg">
+      <h3>Designed by Gbohunmi Williams</h3>
+      </div>
+      <div class="tg">
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+      </div>
+    </div>
+</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>
+  // Custom Smooth Scroll with Speed Multiplier
+// No external libraries needed - just pure JavaScript
+
+class SmoothScroll {
+  constructor() {
+    this.scrollMultiplier = 2;  // CHANGE THIS for scroll speed (higher = faster)
+    this.smoothness = 0.1;      // How smooth (0.05 = very smooth, 0.2 = less smooth)
+    this.currentScroll = window.pageYOffset;
+    this.targetScroll = window.pageYOffset;
+    this.isScrolling = false;
+    
+    this.init();
+  }
+  
+  init() {
+    // Mouse wheel scroll
+    window.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      this.targetScroll += e.deltaY * this.scrollMultiplier;
+      this.clampScroll();
+    }, { passive: false });
+    
+    // Arrow keys and keyboard support
+    window.addEventListener('keydown', (e) => {
+      const scrollAmount = 100;
+      
+      switch(e.key) {
+        case 'ArrowDown':
+          e.preventDefault();
+          this.targetScroll += scrollAmount * this.scrollMultiplier;
+          this.clampScroll();
+          break;
+        case 'ArrowUp':
+          e.preventDefault();
+          this.targetScroll -= scrollAmount * this.scrollMultiplier;
+          this.clampScroll();
+          break;
+        case 'PageDown':
+          e.preventDefault();
+          this.targetScroll += window.innerHeight * 0.8;
+          this.clampScroll();
+          break;
+        case 'PageUp':
+          e.preventDefault();
+          this.targetScroll -= window.innerHeight * 0.8;
+          this.clampScroll();
+          break;
+        case 'Home':
+          e.preventDefault();
+          this.targetScroll = 0;
+          break;
+        case 'End':
+          e.preventDefault();
+          this.targetScroll = this.getMaxScroll();
+          break;
+        case ' ':
+          e.preventDefault();
+          this.targetScroll += window.innerHeight * 0.8 * (e.shiftKey ? -1 : 1);
+          this.clampScroll();
+          break;
+      }
+    });
+    
+    // Scrollbar support
+    window.addEventListener('scroll', () => {
+      const currentPos = window.pageYOffset;
+      if (Math.abs(currentPos - this.currentScroll) > 5) {
+        this.targetScroll = currentPos;
+        this.currentScroll = currentPos;
+      }
+    }, { passive: true });
+    
+    // Start animation loop
+    this.animate();
+  }
+  
+  getMaxScroll() {
+    return Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight
+    ) - window.innerHeight;
+  }
+  
+  clampScroll() {
+    this.targetScroll = Math.max(0, Math.min(this.targetScroll, this.getMaxScroll()));
+  }
+  
+  animate() {
+    // Smooth interpolation
+    this.currentScroll += (this.targetScroll - this.currentScroll) * this.smoothness;
+    
+    // Apply scroll if there's movement
+    if (Math.abs(this.targetScroll - this.currentScroll) > 0.5) {
+      window.scrollTo(0, this.currentScroll);
+    }
+    
+    // Continue loop
+    requestAnimationFrame(() => this.animate());
+  }
+}
+
+// Initialize
+new SmoothScroll();
+
+// Change these values:
+// scrollMultiplier: 1 = normal, 2 = 2x faster, 3 = 3x faster
+// smoothness: 0.05 = very smooth, 0.1 = balanced, 0.2 = quick
+</script>
+</body>
+</html>
